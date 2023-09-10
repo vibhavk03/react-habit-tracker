@@ -1,0 +1,109 @@
+/* resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #edeef6;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+}
+
+/* utility classes */
+.center-text {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.mg-top-10 {
+  margin-top: 10px;
+}
+
+.mg-top-2 {
+  margin-top: 2px;
+}
+
+.wd-1000 {
+  width: 1000px !important;
+}
+
+.primary-btn {
+  background-color: #47a386;
+  border-radius: 6px;
+  font-weight: 700;
+  color: white !important;
+  padding: 8px 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: 0.2s ease-out;
+  border: none;
+  cursor: pointer;
+}
+.primary-btn:hover {
+  background-color: #377e67;
+}
+.secondary-btn {
+  background-color: #5d8aa8;
+}
+.secondary-btn:hover {
+  background-color: #46687e;
+}
+.delete-btn {
+  background-color: #be4156;
+}
+.delete-btn:hover {
+  background-color: #8b2e3d;
+}
+
+/* header */
+header {
+  justify-content: space-between;
+  background-color: black;
+  padding: 10px 10px;
+  min-width: 500px;
+}
+header a {
+  color: white;
+}
+
+/* app container */
+.container {
+  min-height: 100vh;
+  flex-direction: column;
+  display: flex;
+}
+/* footer */
+footer {
+  justify-content: flex-end;
+  padding: 5px 15px;
+  background-color: black;
+  margin-top: auto;
+}
