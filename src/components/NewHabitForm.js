@@ -1,12 +1,19 @@
 import { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { addHabit } from '../features/habit/habitSlice';
 
 const NewHabitForm = () => {
   const [habit, setHabit] = useState('');
+  const dispatch = useDispatch();
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     console.log('habit', habit);
+
+    dispatch(addHabit(habit));
+
+    setHabit('');
   };
 
   return (
