@@ -52,6 +52,10 @@ ul {
   margin-top: 2px;
 }
 
+.mg-top-10vh {
+  margin-top: 10vh;
+}
+
 .wd-1000 {
   width: 1000px !important;
 }
@@ -106,4 +110,23 @@ footer {
   padding: 5px 15px;
   background-color: black;
   margin-top: auto;
+}
+
+/* form */
+.new-habit-form-container {
+  justify-content: center;
+  /* width: 50%; */
+}
+.new-habit-form {
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.new-habit-form input {
+  width: 60%;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.limit-width-70 {
+  width: 55%;
 }
