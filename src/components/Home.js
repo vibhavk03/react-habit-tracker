@@ -1,9 +1,10 @@
 import NewHabitForm from '../components/NewHabitForm';
+import Habits from './Habits';
 const Home = () => {
   return (
     <div className="">
       <NewHabitForm />
-      {/* renders habits here as list */}
+      <Habits />
     </div>
   );
 };

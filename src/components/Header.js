@@ -7,7 +7,7 @@ const Header = () => {
         </a>
       </div>
       <div>
-        <button className="primary-btn secondary-btn">Detail View</button>
+        <button className="primary-btn secondary-btn">Go to Week View</button>
       </div>
     </header>
   );

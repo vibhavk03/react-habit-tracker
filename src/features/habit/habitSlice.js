@@ -10,7 +10,7 @@ export const habitSlice = createSlice({
   reducers: {
     addHabit: (state, action) => {
       const newHabit = {
-        id: nanoid,
+        id: nanoid(),
         text: action.payload,
         completed: false,
       };

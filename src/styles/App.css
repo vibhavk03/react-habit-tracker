@@ -55,6 +55,9 @@ ul {
 .mg-top-10vh {
   margin-top: 10vh;
 }
+.mg-top-bottom-5vh {
+  margin: 5vh 0;
+}
 
 .wd-1000 {
   width: 1000px !important;
@@ -66,7 +69,7 @@ ul {
   font-weight: 700;
   color: white !important;
   padding: 8px 16px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
   transition: 0.2s ease-out;
   border: none;
   cursor: pointer;
@@ -127,6 +130,32 @@ footer {
   border-radius: 6px;
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
-.limit-width-70 {
+.limit-width-55 {
   width: 55%;
+}
+
+/* habits list */
+.habits-container {
+  flex-direction: column;
+}
+.habits-list {
+  flex-direction: column;
+  gap: 20px;
+}
+.individual-habit {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  border-radius: 6px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.inner-habit-right {
+  gap: 20px;
+}
+.limit-width-btn {
+  width: 125px;
+}
+.habit-text {
+  font-weight: bold;
 }

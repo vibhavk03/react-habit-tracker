@@ -18,7 +18,7 @@ const NewHabitForm = () => {
 
   return (
     <div className="new-habit-form-container flex mg-top-10vh">
-      <div className="limit-width-70">
+      <div className="limit-width-55">
         <form className="new-habit-form flex" onSubmit={handleSubmit}>
           <input
             value={habit}
