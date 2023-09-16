@@ -33,7 +33,7 @@ const Habits = () => {
             <div className="inner-habit-center"></div>
             <div className="inner-habit-right flex">
               <button className="primary-btn secondary-btn limit-width-btn link-btn">
-                <Link to="/weekView">Detail View</Link>
+                <Link to={`/weekView/${habit.id}`}>Detail View</Link>
               </button>
               <button
                 className="primary-btn delete-btn limit-width-btn"
