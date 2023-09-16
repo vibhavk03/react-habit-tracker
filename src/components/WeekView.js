@@ -1,10 +1,8 @@
-import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 import DayTile from './DayTile';
 
 const WeekView = () => {
   const habits = useSelector((state) => state.habits);
-  const dispatch = useDispatch();
 
   return (
     <div>
@@ -15,7 +13,11 @@ const WeekView = () => {
               <div className="week-view-habit-heading">{habit.text}</div>
               <div className=" flex week-view-habit-week-log">
                 {habit.weekLog.map((habitDay) => (
-                  <DayTile key={habitDay.id} habitDay={habitDay} />
+                  <DayTile
+                    key={habitDay.id}
+                    habitDay={habitDay}
+                    habitId={habit.id}
+                  />
                 ))}
               </div>
             </div>

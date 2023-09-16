@@ -83,17 +83,23 @@ export const habitSlice = createSlice({
         return action.payload !== habit.id;
       });
     },
-    toggleHabbit: (state, action) => {
-      const { id, toggleValue } = action.payload;
-      state.habits.forEach((habit) => {
-        if (id === habit.id) {
-          habit.completed = toggleValue;
+    changeHabitStatus: (state, action) => {
+      const { habitId, dayId, value } = action.payload;
+      state.habits = state.habits.map((habit) => {
+        if (habit.id === habitId) {
+          habit.weekLog = habit.weekLog.map((day) => {
+            if (day.id === dayId) {
+              day.isCompleted = value;
+            }
+            return day;
+          });
         }
+        return habit;
       });
     },
   },
 });
 
-export const { addHabit, removeHabit } = habitSlice.actions;
+export const { addHabit, removeHabit, changeHabitStatus } = habitSlice.actions;
 
 export default habitSlice.reducer;
