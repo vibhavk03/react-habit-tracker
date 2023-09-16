@@ -1,9 +1,11 @@
+import { Link } from 'react-router-dom';
+
 const Footer = () => {
   return (
     <footer className="flex">
-      <a href="/">
-        <div>🦑</div>
-      </a>
+      <Link to="/">
+        <h3>🦑</h3>
+      </Link>
     </footer>
   );
 };
