@@ -28,38 +28,16 @@ export const habitSlice = createSlice({
   initialState,
   reducers: {
     addHabit: (state, action) => {
+      // add habit to state
       const newHabit = {
         id: nanoid(),
         text: action.payload,
+        // past 7 days record
         weekLog: [
           {
-            id: 0,
-            day: getPreviousDate(0).split(':')[0],
-            date: getPreviousDate(0).split(':')[1],
-            isCompleted: null,
-          },
-          {
-            id: 1,
-            day: getPreviousDate(1).split(':')[0],
-            date: getPreviousDate(1).split(':')[1],
-            isCompleted: null,
-          },
-          {
-            id: 2,
-            day: getPreviousDate(2).split(':')[0],
-            date: getPreviousDate(2).split(':')[1],
-            isCompleted: null,
-          },
-          {
-            id: 3,
-            day: getPreviousDate(3).split(':')[0],
-            date: getPreviousDate(3).split(':')[1],
-            isCompleted: null,
-          },
-          {
-            id: 4,
-            day: getPreviousDate(4).split(':')[0],
-            date: getPreviousDate(4).split(':')[1],
+            id: 6,
+            day: getPreviousDate(6).split(':')[0],
+            date: getPreviousDate(6).split(':')[1],
             isCompleted: null,
           },
           {
@@ -69,9 +47,33 @@ export const habitSlice = createSlice({
             isCompleted: null,
           },
           {
-            id: 6,
-            day: getPreviousDate(6).split(':')[0],
-            date: getPreviousDate(6).split(':')[1],
+            id: 4,
+            day: getPreviousDate(4).split(':')[0],
+            date: getPreviousDate(4).split(':')[1],
+            isCompleted: null,
+          },
+          {
+            id: 3,
+            day: getPreviousDate(3).split(':')[0],
+            date: getPreviousDate(3).split(':')[1],
+            isCompleted: null,
+          },
+          {
+            id: 2,
+            day: getPreviousDate(2).split(':')[0],
+            date: getPreviousDate(2).split(':')[1],
+            isCompleted: null,
+          },
+          {
+            id: 1,
+            day: getPreviousDate(1).split(':')[0],
+            date: getPreviousDate(1).split(':')[1],
+            isCompleted: null,
+          },
+          {
+            id: 0,
+            day: getPreviousDate(0).split(':')[0],
+            date: getPreviousDate(0).split(':')[1],
             isCompleted: null,
           },
         ],
@@ -79,11 +81,14 @@ export const habitSlice = createSlice({
       state.habits.push(newHabit);
     },
     removeHabit: (state, action) => {
+      // remove habit from state
       state.habits = state.habits.filter((habit) => {
         return action.payload !== habit.id;
       });
     },
     changeHabitStatus: (state, action) => {
+      // change individual day habit status
+      // status can be null (default status), true, false
       const { habitId, dayId, value } = action.payload;
       state.habits = state.habits.map((habit) => {
         if (habit.id === habitId) {
