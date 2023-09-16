@@ -89,6 +89,9 @@ ul {
 .delete-btn:hover {
   background-color: #8b2e3d;
 }
+.link-btn a {
+  color: white;
+}
 
 /* header */
 header {
@@ -158,4 +161,50 @@ footer {
 }
 .habit-text {
   font-weight: bold;
+}
+
+/* week-view */
+.week-view-container {
+  flex-direction: column;
+}
+.week-view-habit-heading {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.week-view-list {
+  flex-direction: column;
+  gap: 5vh;
+  width: 90%;
+}
+.week-view-individual-habit {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.03);
+  width: 100%;
+  border-radius: 6px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.week-view-habit-week-log {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* day-tile */
+.day-tile-container {
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  height: 100%;
+  padding: 20px;
+}
+.day-tile-btns {
+  width: 100%;
+  justify-content: space-between;
+}
+.day-tile-btns i {
+  cursor: pointer;
+}
+.day-tile-row {
+  height: 25px;
 }
