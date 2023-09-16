@@ -9,8 +9,6 @@ const NewHabitForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    console.log('habit', habit);
-
     dispatch(addHabit(habit));
 
     setHabit('');

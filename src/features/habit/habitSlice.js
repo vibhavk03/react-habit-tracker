@@ -17,7 +17,9 @@ export const habitSlice = createSlice({
       state.habits.push(newHabit);
     },
     removeHabit: (state, action) => {
-      state.habits.filter((habit) => action.payload !== habit.id);
+      state.habits = state.habits.filter((habit) => {
+        return action.payload !== habit.id;
+      });
     },
     toggleHabbit: (state, action) => {
       const { id, toggleValue } = action.payload;

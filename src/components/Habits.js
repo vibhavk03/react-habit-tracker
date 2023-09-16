@@ -1,7 +1,11 @@
 import { useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
+import { removeHabit } from '../features/habit/habitSlice';
 
 const Habits = () => {
   const habits = useSelector((state) => state.habits);
+  const dispatch = useDispatch();
+
   return (
     <div className="habits-container flex mg-top-bottom-5vh">
       <div className="limit-width-55 flex habits-list">
@@ -16,7 +20,10 @@ const Habits = () => {
               <button className="primary-btn secondary-btn limit-width-btn">
                 Detail View
               </button>
-              <button className="primary-btn delete-btn limit-width-btn">
+              <button
+                className="primary-btn delete-btn limit-width-btn"
+                onClick={() => dispatch(removeHabit(habit.id))}
+              >
                 Remove Habit
               </button>
             </div>
