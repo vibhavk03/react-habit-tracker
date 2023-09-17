@@ -26,3 +26,31 @@ Access this project live here --> https://vibhavk03.github.io/react-habit-tracke
 
 - this project uses react-router-dom package to manage routing of requests<br>
 - reduxjs/toolkit is used for simplifying the state management<br>
+
+## Local Machine Setup
+
+To run this application in your local machine, please follow the below steps.
+
+1 - Clone the repository using the following command
+
+```
+git clone https://github.com/vibhavk03/react-habit-tracker.git
+```
+
+2 - Install the required dependencies using the following command
+
+```
+npm install
+```
+
+3 - Start the application using the following command
+
+```
+npm run start
+```
+
+4 - Open the application in your web browser by going to the below URL
+
+```
+http://localhost:3000/
+```
