@@ -208,6 +208,9 @@ footer {
 .day-tile-row {
   height: 25px;
 }
+.day-tile-btns div {
+  cursor: pointer;
+}
 
 /* individual week view */
 .individual-week-view-habit-container {
