@@ -30,7 +30,6 @@ const Habits = () => {
               <div className="habit-text">{habit.text}</div>
               <div>{getCompletedCount(habit.id)}/7 for past week</div>
             </div>
-            <div className="inner-habit-center"></div>
             <div className="inner-habit-right flex">
               <button className="primary-btn secondary-btn limit-width-btn link-btn">
                 <Link to={`/weekView/${habit.id}`}>Detail View</Link>
