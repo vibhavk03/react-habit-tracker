@@ -16,6 +16,7 @@ import {
 const DayTile = ({ habitDay, habitId }) => {
   const dispatch = useDispatch();
 
+  // rendering habit day tile
   return (
     <div className="day-tile-container flex">
       <div className="day-tile-row">{habitDay.day}</div>

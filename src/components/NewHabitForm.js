@@ -14,6 +14,7 @@ const NewHabitForm = () => {
     setHabit('');
   };
 
+  // getting new habit input
   return (
     <div className="new-habit-form-container flex mg-top-10vh">
       <div className="limit-width-55">

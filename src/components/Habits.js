@@ -21,6 +21,7 @@ const Habits = () => {
     return count;
   };
 
+  // rendering all habits in the state
   return (
     <div className="habits-container flex mg-top-bottom-5vh">
       <div className="limit-width-55 flex habits-list">

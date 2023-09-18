@@ -4,6 +4,7 @@ import DayTile from './DayTile';
 const WeekView = () => {
   const habits = useSelector((state) => state.habits);
 
+  // rendering detail view for all habits
   return (
     <div>
       <div className="week-view-container flex mg-top-bottom-5vh">
